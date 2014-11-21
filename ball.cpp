@@ -1,4 +1,5 @@
 #include "gLibrary.h"
+#include <iostream>
 
 ball::ball (Point p, ink c, char sh, double sp, double d)
 {
