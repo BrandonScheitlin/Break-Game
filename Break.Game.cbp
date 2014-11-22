@@ -32,7 +32,17 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="ball.cpp" />
+		<Unit filename="ball.h" />
+		<Unit filename="brick.h" />
+		<Unit filename="gLibrary.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="paddle.cpp" />
+		<Unit filename="paddle.h" />
+		<Unit filename="plotter.cpp" />
+		<Unit filename="plotter.h" />
+		<Unit filename="point.cpp" />
+		<Unit filename="point.h" />
 		<Extensions>
 			<code_completion />
 			<debugger />
