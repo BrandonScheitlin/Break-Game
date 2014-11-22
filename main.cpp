@@ -29,6 +29,8 @@ The person will know what the arrow keys are.
 
 #include "gLibrary.h"
 
+
+
 int main()
 {
     int key;
@@ -37,10 +39,24 @@ int main()
     ball gameBall;
     bool gameOver = false;
     paddle.draw(screen);
+    const int WALL_ROWS = 6;
+    const int WALL_COLS = 11;
+    brick wall[WALL_ROWS][WALL_COLS];
 
 
 
-        while(!gameOver)
+     for(int r = 0; r < WALL_ROWS; r++)
+    {
+        for(int c = 0; c < WALL_COLS; c++)
+        {
+            wall[r][c].setColor(ink(rand()%15+1));
+            wall[r][c].setLoc(Point(c * 21 + 14, r * 3 + 12));
+            wall[r][c].draw(screen);
+        }
+    }
+
+
+    while(!gameOver)
     {
 
 
@@ -52,11 +68,11 @@ int main()
             {
                 key = getch();
             }
-            if (key == 77 && !paddle.paddleHitWall(paddle, 230))
+            if (key == 77 && !paddle.paddleHitWall(paddle, 224))
             {
                 paddle.move(1);
             }
-            if (key == 75 && !paddle.paddleHitWall(paddle, 9))
+            if (key == 75 && !paddle.paddleHitWall(paddle, 15))
             {
                 paddle.move(-1);
             }
@@ -109,15 +125,19 @@ int main()
             }
             gameBall.setSpeed(gameBall.getSpeed() + .1);
         }
+
             gameBall.erase(screen);
             gameBall.draw(screen);
             gameBall.move();
-            Sleep(10);
+                Sleep(10);
 
         if(gameBall.ballHitBottomWall(gameBall, 97))
         {
             gameOver = true;
         }
+
+
+
 
     }
 
