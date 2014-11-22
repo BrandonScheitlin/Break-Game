@@ -3,6 +3,7 @@
 
 #include "gLibrary.h"
 
+
 class brick
 {
     public:
@@ -14,6 +15,8 @@ class brick
     ink getColor();
     void setColor(ink a);
     char getShape();
+    bool ballHitBrick(ball b);
+
 
     private:
     int width, rows;
@@ -25,3 +28,4 @@ class brick
 };
 
 #endif // BRICK_H_INCLUDED
+
