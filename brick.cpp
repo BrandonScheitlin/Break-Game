@@ -13,15 +13,9 @@ void brick::setLoc(Point a)
 {
     loc = a;
 }
-void brick::setY(double a)
-{
-}
 Point brick::getLoc()
 {
     return loc;
-}
-double brick::getY()
-{
 }
 void brick::draw(Plotter& g)
 {
@@ -33,9 +27,6 @@ void brick::draw(Plotter& g)
             g.plot(loc.getX() + i, loc.getY() + j, SQUARE);
         }
     }
-}
-void brick::erase(Plotter& g)
-{
 }
 ink brick::getColor()
 {
