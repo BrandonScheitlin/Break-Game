@@ -1,16 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <CodeBlocks_layout_file>
 	<ActiveTarget name="Debug" />
-	<File name="gLibrary.h" open="1" top="0" tabpos="6">
+	<File name="brick.cpp" open="1" top="1" tabpos="6">
+		<Cursor position="23" topLine="0" />
+	</File>
+	<File name="brick.h" open="1" top="0" tabpos="5">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="gLibrary.h" open="1" top="0" tabpos="3">
 		<Cursor position="142" topLine="0" />
 	</File>
-	<File name="main.cpp" open="1" top="1" tabpos="1">
+	<File name="main.cpp" open="1" top="0" tabpos="1">
 		<Cursor position="2776" topLine="77" />
 	</File>
-	<File name="paddle.h" open="1" top="0" tabpos="8">
+	<File name="paddle.h" open="1" top="0" tabpos="4">
 		<Cursor position="367" topLine="0" />
 	</File>
-	<File name="plotter.cpp" open="1" top="0" tabpos="4">
+	<File name="plotter.cpp" open="1" top="0" tabpos="2">
 		<Cursor position="1847" topLine="33" />
 	</File>
 </CodeBlocks_layout_file>
