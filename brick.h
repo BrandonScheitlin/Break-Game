@@ -29,4 +29,7 @@ class brick
 
 #endif // BRICK_H_INCLUDED
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> e2933428e39fd6c548516909934935a07649ca97
