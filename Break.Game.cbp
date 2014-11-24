@@ -37,6 +37,8 @@
 		<Unit filename="brick.cpp" />
 		<Unit filename="brick.h" />
 		<Unit filename="gLibrary.h" />
+		<Unit filename="game.cpp" />
+		<Unit filename="game.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="paddle.cpp" />
 		<Unit filename="paddle.h" />
@@ -44,6 +46,8 @@
 		<Unit filename="plotter.h" />
 		<Unit filename="point.cpp" />
 		<Unit filename="point.h" />
+		<Unit filename="wall.cpp" />
+		<Unit filename="wall.h" />
 		<Extensions>
 			<code_completion />
 			<debugger />

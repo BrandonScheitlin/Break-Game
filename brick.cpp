@@ -8,20 +8,15 @@ brick::brick(int w, int r, ink c, Point p, char sh)
     loc.setY(40);
     shape = sh;
     rows = r;
+
 }
 void brick::setLoc(Point a)
 {
     loc = a;
 }
-void brick::setY(double a)
-{
-}
 Point brick::getLoc()
 {
     return loc;
-}
-double brick::getY()
-{
 }
 void brick::draw(Plotter& g)
 {
@@ -33,9 +28,6 @@ void brick::draw(Plotter& g)
             g.plot(loc.getX() + i, loc.getY() + j, SQUARE);
         }
     }
-}
-void brick::erase(Plotter& g)
-{
 }
 ink brick::getColor()
 {
@@ -49,3 +41,20 @@ char brick::getShape()
 {
     return shape;
 }
+
+bool brick::ballHitBrick(ball b)
+{
+    bool hit = false;
+
+                if(b.getLoc().getY() <= brick[r][c].getLoc().getY() + 4 && b.getLoc().getY() >= brick[r][c].getLoc().getY() )
+                {
+                    if(b.getLoc().getX() <= brick[r][c].getLoc().getX() + 12 && b.getLoc().getX() >= brick[r][c].getLoc().getX() - 10)
+                    {
+                        hit = true;
+                    }
+                }
+
+
+        return hit;
+}
+

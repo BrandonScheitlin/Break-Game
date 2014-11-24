@@ -42,11 +42,11 @@
     bool paddleType::hitByBall(ball b)
     {
          bool hit;
-         hit = (loc.getY() <= b.getLoc().getY());
+         hit = (loc.getY()) <= (b.getLoc().getY());
          if(hit)
          {
-             hit = ((loc.getX() + width/2 <= b.getLoc().getX()) ||
-                   (loc.getX() - width/2 <= b.getLoc().getX()));
+             hit = (loc.getX() - width/2) < (b.getLoc().getX()) &&
+                   (loc.getX() + width/2) >= (b.getLoc().getX());
 
          }
          return hit;
@@ -60,4 +60,3 @@
         }
         return HitWall;
     }
-

@@ -2,12 +2,13 @@
 1416517478 source:c:\users\brand_000\documents\break.game\break.game\main.cpp
 	"gLibrary.h"
 
-1416517728 c:\users\brand_000\documents\break.game\break.game\glibrary.h
+1416790254 c:\users\brand_000\documents\break.game\break.game\glibrary.h
 	"point.h"
 	"plotter.h"
 	"ball.h"
 	"paddle.h"
 	"brick.h"
+	"game.h"
 	<iostream>
 	<cmath>
 	<ostream>
@@ -31,7 +32,8 @@
 1416517768 c:\users\brand_000\documents\break.game\break.game\paddle.h
 	"gLibrary.h"
 
-1416517758 c:\users\brand_000\documents\break.game\break.game\brick.h
+1416790254 c:\users\brand_000\documents\break.game\break.game\brick.h
+	"gLibrary.h"
 
 1416517590 source:c:\users\brand_000\documents\break.game\break.game\paddle.cpp
 	"gLibrary.h"
@@ -45,4 +47,6 @@
 1416517804 source:c:\users\brand_000\documents\break.game\break.game\plotter.cpp
 	<iostream>
 	"plotter.h"
+
+1416789716 c:\users\brand_000\documents\break.game\break.game\game.h
 

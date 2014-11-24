@@ -31,95 +31,10 @@ The person will know what the arrow keys are.
 
 int main()
 {
-    int key;
-    Plotter screen;
-    paddleType paddle;
-    ball gameBall;
-    bool gameOver = false;
-    paddle.draw(screen);
+    Game game;
 
-
-
-        while(!gameOver)
-    {
-
-
-        if (kbhit())
-        {
-
-            key = getch();
-            if (key == 224)
-            {
-                key = getch();
-            }
-            if (key == 77 && !paddle.paddleHitWall(paddle, 230))
-            {
-                paddle.move(1);
-            }
-            if (key == 75 && !paddle.paddleHitWall(paddle, 9))
-            {
-                paddle.move(-1);
-            }
-            paddle.erase(screen);
-            paddle.draw(screen);
-        }
-        if (gameBall.ballHitLeftWall(gameBall, 0))
-        {
-            if (gameBall.getDir() == 5*3.14/4)
-            {
-                gameBall.setDir(7*3.14/4);
-            }
-            else
-            {
-                gameBall.setDir(3.14/4);
-            }
-        }
-        if (gameBall.ballHitTopWall(gameBall, 3))
-        {
-            if (gameBall.getDir() == 3.14/4)
-            {
-                gameBall.setDir(7*3.14/4);
-            }
-            else
-            {
-                gameBall.setDir(5*3.14/4);
-            }
-        }
-        if (gameBall.ballHitRightWall(gameBall, 240))
-        {
-            if (gameBall.getDir() == 7*3.14/4)
-            {
-                gameBall.setDir(5*3.14/4);
-            }
-            else
-            {
-                gameBall.setDir(3*3.14/4);
-            }
-        }
-
-        if (paddle.hitByBall(gameBall))
-        {
-            if (gameBall.getDir() == 7*3.14/4)
-            {
-                gameBall.setDir(3.14/4);
-            }
-            else
-            {
-                gameBall.setDir(3*3.14/4);
-            }
-            gameBall.setSpeed(gameBall.getSpeed() + .1);
-        }
-            gameBall.erase(screen);
-            gameBall.draw(screen);
-            gameBall.move();
-            Sleep(10);
-
-        if(gameBall.ballHitBottomWall(gameBall, 97))
-        {
-            gameOver = true;
-        }
-
-    }
+    game.play();
 
     return 0;
 }
+
